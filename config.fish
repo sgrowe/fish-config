@@ -19,15 +19,19 @@ abbr gcs git commit --squash
 abbr gcf git commit --fixup
 abbr gbl git blame
 abbr gd git diff
+abbr gdc git diff --cached
 abbr gf git fetch
 abbr gb git branch
 abbr gl git log
 abbr gm git merge --autostash
+abbr gma git merge --abort
+abbr gmm git merge --autostash main
 abbr gpl git pull --autostash
 abbr gr git rebase --autostash
 abbr gri git rebase --interactive --autosquash
 abbr grc git rebase --continue
-abbr grs git reset
+abbr grs git restore
+abbr grss git restore --staged
 abbr grv git revert
 abbr gcp git cherry-pick
 abbr mn "git switch main && git pull"
@@ -86,9 +90,11 @@ abbr dt yarn devtools
 abbr sf hurl --variables-file sf.env
 
 
+# Projects
+abbr fsh cd ~/.config/fish
+abbr aoc cd ~/projects/advent-of-code-2023/adventOfCode2023
+abbr mdi cd ~/projects/MDI\\ Tracker
+
+
 # Xcode
 abbr xcderiv cd ~/Library/Developer/Xcode/DerivedData
-
-
-# AOC
-abbr aoc cd ~/projects/advent-of-code-2023/adventOfCode2023
