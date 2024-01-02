@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+
+!config.fish
+
+# Fisher
+# https://github.com/jorgebucaran/fisher
+!fish_plugins
