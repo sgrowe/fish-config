@@ -23,6 +23,8 @@ abbr gdc git diff --cached
 abbr gf git fetch
 abbr gb git branch
 abbr gl git log
+abbr gst git stash
+abbr pop git stash pop
 abbr gm git merge --autostash
 abbr gma git merge --abort
 abbr gmm git merge --autostash main
