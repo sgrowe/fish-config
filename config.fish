@@ -9,6 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fish
 abbr conf code ~/.config/fish/config.fish
+abbr fsh cd ~/.config/fish
 
 
 # git
@@ -93,8 +94,7 @@ abbr sf hurl --variables-file sf.env
 
 
 # Projects
-abbr fsh cd ~/.config/fish
-abbr aoc cd ~/projects/advent-of-code-2023/adventOfCode2023
+abbr para cd ~/planes/paraspara-platform
 abbr mdi cd ~/projects/MDI\\ Tracker
 
 
