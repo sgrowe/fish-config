@@ -7,3 +7,7 @@
 # Fisher
 # https://github.com/jorgebucaran/fisher
 !fish_plugins
+
+# Functions whitelist
+!functions
+!functions/new_ticket.fish
