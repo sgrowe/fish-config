@@ -31,6 +31,7 @@ abbr gma git merge --abort
 abbr gmm git merge --autostash main
 abbr gpl git pull --autostash
 abbr gr git rebase --autostash
+abbr grm git rebase --autostash main
 abbr gri git rebase --interactive --autosquash
 abbr grc git rebase --continue
 abbr grs git restore

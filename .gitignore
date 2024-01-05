@@ -11,3 +11,4 @@
 # Functions whitelist
 !functions
 !functions/new_ticket.fish
+!functions/rm_node_modules.fish
