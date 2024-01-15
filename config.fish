@@ -85,6 +85,14 @@ abbr yad yarn add --dev
 set -gx NEXT_TELEMETRY_DISABLED 1
 
 
+# Hurl
+abbr h hurl --variables-file .env
+
+
+# Android simulator
+abbr andr_paste adb shell input text
+
+
 # Paraspara
 abbr dev yarn dev
 abbr ios yarn dev:ios
