@@ -12,3 +12,4 @@
 !functions
 !functions/new_ticket.fish
 !functions/rm_node_modules.fish
+!functions/ahead_behind.fish
