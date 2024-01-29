@@ -31,7 +31,8 @@ abbr gma git merge --abort
 abbr gmm git merge --autostash main
 abbr gpl git pull --autostash
 abbr gr git rebase
-abbr gro git rebase --onto main
+abbr gra git rebase --autostash
+abbr gro git rebase --autostash --onto main
 abbr grm git rebase --autostash main
 abbr gri git rebase --interactive --autosquash
 abbr grc git rebase --continue
@@ -39,8 +40,9 @@ abbr grs git restore
 abbr grss git restore --staged
 abbr grv git revert
 abbr gw git worktree
+abbr gwl git worktree list
 abbr gcp git cherry-pick
-abbr mn "git switch main && git pull"
+abbr mn "git switch main && git pull --autostash"
 
 
 # ls
@@ -96,6 +98,7 @@ abbr andr_paste adb shell input text
 
 
 # Paraspara
+abbr yt yarn test --watch --coverage false
 abbr dev yarn dev
 abbr ios yarn dev:ios
 abbr andr yarn dev:android
