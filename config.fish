@@ -103,10 +103,17 @@ abbr yad yarn add --dev
 
 # Next.js
 set -gx NEXT_TELEMETRY_DISABLED 1
+# Turbo
+set -gx TURBO_TELEMETRY_DISABLED 1
 
 
 # Hurl
 abbr h hurl --variables-file .env
+
+
+# iOS simulator
+# Open url in already booted simulator
+abbr so xcrun simctl openurl booted
 
 
 # Android simulator
