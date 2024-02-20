@@ -32,7 +32,7 @@ abbr gf git fetch
 
 abbr gl git log
 
-abbr gst git stash
+abbr gst git stash --all
 abbr pop git stash pop
 
 abbr gm git merge --autostash
