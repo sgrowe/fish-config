@@ -21,7 +21,7 @@ abbr gcs git commit --squash
 abbr gcf git commit --fixup
 
 abbr gb git branch
-abbr gbc git branch --show-current | string collect | pbcopy
+abbr gbc "git branch --show-current | string collect | pbcopy"
 
 abbr gbl git blame
 
@@ -32,7 +32,7 @@ abbr gf git fetch
 
 abbr gl git log
 
-abbr gst git stash --all
+abbr gst git stash
 abbr pop git stash pop
 
 abbr gm git merge --autostash
@@ -109,6 +109,7 @@ set -gx TURBO_TELEMETRY_DISABLED 1
 
 # Hurl
 abbr h hurl --variables-file .env
+abbr hm "hurl --variables-file .env --cert ../../.certs/*.pem --key ../../.certs/*.key"
 
 
 # iOS simulator
@@ -122,12 +123,17 @@ abbr andr_paste adb shell input text
 
 # Paraspara
 abbr yt yarn test --watch --coverage false
+abbr yty yarn type-check
 abbr dev yarn dev
 abbr ios yarn dev:ios
 abbr andr yarn dev:android
-abbr e2e "cd apps/native && yarn e2e:ios"
+abbr e2e "yarn workspace native e2e:ios"
+abbr e2e_build "yarn workspace native detox build -c ios.sim.debug"
+abbr e2e_run "yarn workspace native detox test --configuration ios.sim.debug --take-screenshots failing --record-videos failing -l debug"
 abbr dt yarn devtools
 abbr sf hurl --variables-file sf.env
+abbr sw "yarn && yarn workspace graphql-types build"
+abbr rmxc rm apps/native/ios/.xcode.env.local
 
 
 # Projects
