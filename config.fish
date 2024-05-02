@@ -14,6 +14,7 @@ abbr fsh cd ~/.config/fish
 
 # git
 abbr ga git add
+abbr gai git add --interactive .
 
 abbr gc git commit
 abbr gca git commit --amend
@@ -138,6 +139,7 @@ abbr rmxc rm apps/native/ios/.xcode.env.local
 
 # Projects
 abbr para cd ~/planes/paraspara-platform
+abbr para2 cd ~/planes/paraspara-platform-2
 abbr mdi cd ~/projects/MDI\\ Tracker
 
 
