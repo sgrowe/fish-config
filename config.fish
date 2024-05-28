@@ -34,11 +34,14 @@ abbr gf git fetch
 abbr gl git log
 
 abbr gst git stash
-abbr pop git stash pop
+abbr gsp git stash pop
+abbr gsa "git add . && git stash"
 
 abbr gm git merge --autostash
 abbr gma git merge --abort
 abbr gmm git merge --autostash main
+abbr ff git merge --autostash --ff-only
+abbr ffm git merge --autostash --ff-only main
 
 abbr gpl git pull --autostash
 
@@ -115,7 +118,7 @@ abbr hm "hurl --variables-file .env --cert ../../.certs/*.pem --key ../../.certs
 
 # iOS simulator
 # Open url in already booted simulator
-abbr so xcrun simctl openurl booted
+abbr so "xcrun simctl openurl booted (pbpaste)"
 
 
 # Android simulator
@@ -123,7 +126,7 @@ abbr andr_paste adb shell input text
 
 
 # Paraspara
-abbr yt yarn test --watch --coverage false
+abbr yt yarn test --watch --coverage false --maxWorkers=2
 abbr yty yarn type-check
 abbr dev yarn dev
 abbr ios yarn dev:ios
