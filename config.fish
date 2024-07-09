@@ -126,12 +126,13 @@ abbr andr_paste adb shell input text
 
 
 # Paraspara
-abbr yt yarn test --watch --coverage false --maxWorkers=2
+abbr yt "yarn test -- --watch --coverage false --maxWorkers=2 --ignoreProjects native:android native-ui:android"
 abbr yty yarn type-check
 abbr dev yarn dev
 abbr ios yarn dev:ios
 abbr andr yarn dev:android
-abbr e2e "yarn workspace native e2e:ios"
+abbr e2eb "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox build -c ios.sim.release"
+abbr e2er "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox test --configuration ios.sim.release --take-screenshots failing --record-videos failing -l debug"
 abbr e2e_build "yarn workspace native detox build -c ios.sim.debug"
 abbr e2e_run "yarn workspace native detox test --configuration ios.sim.debug --take-screenshots failing --record-videos failing -l debug"
 abbr dt yarn devtools
