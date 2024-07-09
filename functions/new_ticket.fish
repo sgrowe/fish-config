@@ -4,7 +4,7 @@ function new_ticket --argument-names ticket_name
 
     git switch main
     and git pull
-    and git switch -c "BX-$ticket_name"
+    and git switch -c "SF-$ticket_name"
     and yarn
     and yarn workspace graphql-types build
 end
