@@ -126,9 +126,10 @@ abbr andr_paste adb shell input text
 
 
 # Paraspara
-abbr yt "yarn test -- --watch --coverage false --maxWorkers=2 --ignoreProjects native:android native-ui:android"
+abbr yt "yarn test -- --coverage false --maxWorkers=2 --ignoreProjects native:android native-ui:android --watch"
 abbr yty yarn type-check
-abbr dev yarn dev
+abbr dev yarn dev --filter=!./apps/orchestrator
+abbr orc yarn workspace orchestrator dev
 abbr ios yarn dev:ios
 abbr andr yarn dev:android
 abbr e2eb "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox build -c ios.sim.release"
