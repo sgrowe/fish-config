@@ -131,6 +131,7 @@ abbr yty yarn type-check
 abbr dev yarn dev --filter=!./apps/orchestrator
 abbr orc yarn workspace orchestrator dev
 abbr ios yarn dev:ios
+abbr ios_prebuild "cd apps/native && yarn prebuild:cached && cd ios && pod install"
 abbr andr yarn dev:android
 abbr e2eb "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox build -c ios.sim.release"
 abbr e2er "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox test --configuration ios.sim.release --take-screenshots failing --record-videos failing -l debug"
@@ -139,6 +140,7 @@ abbr e2e_run "yarn workspace native detox test --configuration ios.sim.debug --t
 abbr dt yarn devtools
 abbr sf hurl --variables-file sf.env
 abbr sw "yarn && yarn workspace graphql-types build"
+abbr gql "yarn workspace graphql-types build"
 abbr rmxc rm apps/native/ios/.xcode.env.local
 
 
