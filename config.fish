@@ -8,7 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # fish
-abbr conf code ~/.config/fish/config.fish
+abbr conf cursor ~/.config/fish/config.fish
 abbr fsh cd ~/.config/fish
 
 
@@ -33,6 +33,8 @@ abbr gf git fetch
 
 abbr gl git log
 
+abbr gt git tag
+
 abbr gst git stash
 abbr gsp git stash pop
 abbr gsa "git add . && git stash"
@@ -54,6 +56,8 @@ abbr grc git rebase --continue
 
 abbr grs git restore
 abbr grss git restore --staged
+
+abbr grst git reset HEAD~1
 
 abbr grv git revert
 
@@ -103,6 +107,7 @@ abbr ni npm install
 abbr y yarn
 abbr ya yarn add
 abbr yad yarn add --dev
+abbr yw yarn workspace
 
 
 # Next.js
@@ -128,8 +133,9 @@ abbr andr_paste adb shell input text
 # Paraspara
 abbr yt "yarn test -- --coverage false --maxWorkers=2 --ignoreProjects native:android native-ui:android --watch"
 abbr yty yarn type-check
-abbr dev yarn dev --filter=!./apps/orchestrator
+abbr dev yarn dev --filter=!./apps/orchestrator --filter=!./apps/paraspara-web
 abbr orc yarn workspace orchestrator dev
+abbr web yarn workspace paraspara-web dev
 abbr ios yarn dev:ios
 abbr ios_prebuild "cd apps/native && yarn prebuild:cached && cd ios && pod install"
 abbr andr yarn dev:android
