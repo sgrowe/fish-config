@@ -47,8 +47,7 @@ abbr ffm git merge --autostash --ff-only main
 
 abbr gpl git pull --autostash
 
-abbr gr git rebase
-abbr gra git rebase --autostash
+abbr gr git rebase --autostash
 abbr gro git rebase --autostash --onto main
 abbr grm git rebase --autostash main
 abbr gri git rebase --interactive --autosquash
