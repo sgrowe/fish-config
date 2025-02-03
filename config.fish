@@ -69,6 +69,7 @@ abbr mn "git switch main && git pull --autostash"
 
 
 # ls
+abbr l ls -A
 abbr lsh ls -lh
 
 
