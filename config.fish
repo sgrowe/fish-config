@@ -110,6 +110,10 @@ abbr yad yarn add --dev
 abbr yw yarn workspace
 
 
+# Cursor
+abbr cu cursor
+
+
 # Next.js
 set -gx NEXT_TELEMETRY_DISABLED 1
 # Turbo
