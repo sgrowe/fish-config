@@ -65,12 +65,14 @@ abbr gwl git worktree list
 
 abbr gcp git cherry-pick
 
+abbr gco git checkout
+
 abbr mn "git switch main && git pull --autostash"
 
 
 # ls
 abbr l ls -A
-abbr lsh ls -lh
+abbr lh ls -lh
 
 
 # Rust
@@ -88,15 +90,6 @@ abbr dr docker run
 abbr db docker buildx
 
 
-# pnpm
-abbr p pnpm
-abbr pa pnpm add
-abbr pad pnpm add --save-dev
-abbr b pnpm run build
-abbr dv pnpm run dev
-abbr dep pnpm run deploy
-
-
 # npm
 abbr n npm
 abbr nr npm run
@@ -110,8 +103,8 @@ abbr yad yarn add --dev
 abbr yw yarn workspace
 
 
-# Cursor
-abbr cu cursor
+# brew
+abbr b brew
 
 
 # Next.js
@@ -123,6 +116,20 @@ set -gx TURBO_TELEMETRY_DISABLED 1
 # Hurl
 abbr h hurl --variables-file .env
 abbr hm "hurl --variables-file .env --cert ../../.certs/*.pem --key ../../.certs/*.key"
+
+
+# Cursor
+abbr cu cursor
+
+
+# Aider
+abbr a aider
+abbr ai aider
+abbr aiw aider --watch-files
+abbr --command aider m -- --message
+abbr --command aider mf -- --message-file
+abbr --command aider t -- --test
+abbr --command aider w -- --watch-files
 
 
 # iOS simulator
