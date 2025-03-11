@@ -35,6 +35,8 @@ abbr gl git log
 
 abbr gt git tag
 
+abbr gs git status -sb
+
 abbr gst git stash
 abbr gsp git stash pop
 abbr gsa "git add . && git stash"
@@ -130,6 +132,10 @@ abbr --command aider m -- --message
 abbr --command aider mf -- --message-file
 abbr --command aider t -- --test
 abbr --command aider w -- --watch-files
+
+
+# aider-script
+abbr as aider-script
 
 
 # iOS simulator
