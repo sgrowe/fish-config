@@ -13,8 +13,8 @@ abbr fsh cd ~/.config/fish
 
 
 # git
-abbr ga git add
-abbr gai git add --interactive .
+abbr ga git add .
+abbr gai git add --interactive
 
 abbr gc git commit
 abbr gca git commit --amend
@@ -134,6 +134,9 @@ abbr --command aider t -- --test
 abbr --command aider w -- --watch-files
 
 
+set -x AIDER_NOTIFICATIONS true
+
+
 # aider-script
 abbr as aider-script
 
@@ -148,7 +151,7 @@ abbr andr_paste adb shell input text
 
 
 # Paraspara
-abbr yt "yarn test -- --coverage false --maxWorkers=2 --ignoreProjects native:android native-ui:android --watch"
+abbr yt "yarn test -- --coverage false --maxWorkers=2 --workerThreads=false --ignoreProjects native:android native-ui:android --watch"
 abbr yty yarn type-check
 abbr dev yarn dev --filter=!./apps/orchestrator --filter=!./apps/paraspara-web
 abbr orc yarn workspace orchestrator dev
