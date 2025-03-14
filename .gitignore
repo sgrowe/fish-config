@@ -14,3 +14,4 @@
 !functions/rm_node_modules.fish
 !functions/ahead_behind.fish
 !functions/adyen_test_card.fish
+!functions/recent_branches.fish
