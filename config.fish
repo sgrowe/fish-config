@@ -13,7 +13,7 @@ abbr fsh cd ~/.config/fish
 
 
 # git
-abbr ga git add .
+abbr ga git add
 abbr gai git add --interactive
 
 abbr gc git commit
@@ -58,6 +58,7 @@ abbr grc git rebase --continue
 abbr grs git restore
 abbr grss git restore --staged
 
+abbr undo git reset HEAD~1
 abbr grst git reset HEAD~1
 
 abbr grv git revert
