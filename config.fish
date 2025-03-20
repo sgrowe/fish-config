@@ -39,6 +39,7 @@ abbr gt git tag
 abbr gs git status -sb
 
 abbr gst git stash
+abbr pop git stash pop
 abbr gsp git stash pop
 abbr gsa "git add . && git stash"
 
