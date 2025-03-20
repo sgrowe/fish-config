@@ -130,6 +130,8 @@ abbr cu cursor
 abbr a aider
 abbr awd "aider (git status -s | awk '{print \$NF}')" # Start aider with edited files loaded
 abbr aw aider --watch-files
+abbr --command aider r -- --read
+abbr --command aider e -- --edit
 abbr --command aider m -- --message
 abbr --command aider mf -- --message-file
 abbr --command aider t -- --test
