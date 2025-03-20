@@ -30,6 +30,7 @@ abbr gd git diff
 abbr gdc git diff --cached
 
 abbr gf git fetch
+abbr gfm git fetch origin main:main
 
 abbr gl git log
 
