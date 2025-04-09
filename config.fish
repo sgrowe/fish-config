@@ -1,5 +1,11 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+
+    if not set -q EDITOR
+        set -x EDITOR "zed --wait"
+    end
+
+    set -g lucid_prompt_symbol_error "!"
 end
 
 
@@ -8,8 +14,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # fish
-abbr conf cursor ~/.config/fish/config.fish
-abbr fsh cd ~/.config/fish
+abbr conf "$EDITOR ~/.config/fish/config.fish"
+abbr fconf "$EDITOR ~/.config/fish"
 
 
 # git
@@ -123,6 +129,10 @@ abbr h hurl --variables-file .env
 abbr hm "hurl --variables-file .env --cert ../../.certs/*.pem --key ../../.certs/*.key"
 
 
+# Zed
+abbr z zed
+
+
 # Cursor
 abbr cu cursor
 
@@ -156,7 +166,7 @@ abbr andr_paste adb shell input text
 
 
 # Paraspara
-abbr yt "yarn test -- --coverage false --maxWorkers=2 --workerThreads=false --ignoreProjects native:android native-ui:android --watch"
+abbr yt "yarn test -- --coverage false --maxWorkers=2 --workerThreads=false --ignoreProjects native-android native-ui-android --watch"
 abbr yty yarn type-check
 abbr dev yarn dev --filter=!./apps/orchestrator --filter=!./apps/paraspara-web
 abbr orc yarn workspace orchestrator dev
