@@ -145,7 +145,7 @@ abbr hm "hurl --variables-file .env --cert ../../.certs/*.pem --key ../../.certs
 
 
 # Zed
-abbr z zed
+abbr ze zed
 
 
 # Cursor
@@ -208,3 +208,7 @@ abbr mdi cd ~/projects/MDI\\ Tracker
 
 # Xcode
 abbr xcderiv cd ~/Library/Developer/Xcode/DerivedData
+
+
+# zoxide: https://github.com/ajeetdsouza/zoxide
+zoxide init fish | source
