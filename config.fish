@@ -1,16 +1,22 @@
+
+# Homebrew - comes first to update env
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
+    # Override `$EDITOR` in each editor in order to use itself
     if not set -q EDITOR
         set -x EDITOR "zed --wait"
     end
 
+    # fzf: https://junegunn.github.io/fzf/shell-integration/
+    fzf --fish | source
+
+    # Prompt
     set -g lucid_prompt_symbol_error "!"
 end
-
-
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # Be verbose
@@ -83,6 +89,9 @@ abbr gwl git worktree list
 abbr gcp git cherry-pick
 
 abbr gco git checkout
+
+abbr gsw "git branch | fzf --preview 'git log --color=always {-1}' --bind 'enter:become(git switch {-1})'"
+
 
 abbr mn "git switch main && git pull --autostash"
 
