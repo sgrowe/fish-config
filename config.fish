@@ -13,6 +13,12 @@ end
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
+# Be verbose
+abbr mv 'mv -v'
+abbr rm 'rm -v'
+abbr cp 'cp -v'
+
+
 # fish
 abbr conf "$EDITOR ~/.config/fish/config.fish"
 abbr fconf "$EDITOR ~/.config/fish"
