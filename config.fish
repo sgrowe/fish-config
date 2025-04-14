@@ -30,6 +30,14 @@ abbr conf "$EDITOR ~/.config/fish/config.fish"
 abbr fconf "$EDITOR ~/.config/fish"
 
 
+# JJ
+abbr j jj
+abbr js jj status
+abbr jn jj new
+abbr jd jj describe
+abbr jl jj log
+
+
 # git
 abbr ga git add
 abbr gai git add --interactive
@@ -203,6 +211,7 @@ abbr rmxc rm apps/native/ios/.xcode.env.local
 # Projects
 abbr para cd ~/planes/paraspara-platform
 abbr para2 cd ~/planes/paraspara-platform-2
+abbr para3 cd ~/planes/paraspara-platform-3
 abbr mdi cd ~/projects/MDI\\ Tracker
 
 
