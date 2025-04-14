@@ -6,10 +6,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 if status is-interactive
     # Commands to run in interactive sessions can go here
 
-    # Override `$EDITOR` in each editor in order to use itself
-    if not set -q EDITOR
-        set -x EDITOR "zed --wait"
+    # Override `$EDIT` in each editor in order to use itself
+    if not set -q EDIT
+        set -x EDIT "code"
     end
+
+    set -x EDITOR "$EDIT --wait"
 
     # fzf: https://junegunn.github.io/fzf/shell-integration/
     fzf --fish | source
@@ -26,8 +28,8 @@ abbr cp 'cp -v'
 
 
 # fish
-abbr conf "$EDITOR ~/.config/fish/config.fish"
-abbr fconf "$EDITOR ~/.config/fish"
+abbr conf "$EDIT ~/.config/fish/config.fish"
+abbr fconf "$EDIT ~/.config/fish"
 
 
 # JJ
