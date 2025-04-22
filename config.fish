@@ -36,8 +36,22 @@ abbr fconf "$EDIT ~/.config/fish"
 abbr j jj
 abbr js jj status
 abbr jn jj new
-abbr jd jj describe
+abbr jd jj diff --ignore-space-change
+abbr jds jj describe
+abbr jm --set-cursor "jj describe -m \"%\""
+abbr jc --set-cursor "jj commit -m \"%\""
 abbr jl jj log
+abbr jls jj log --summary
+abbr je jj edit
+abbr jsq jj squash
+abbr jsh jj show
+abbr jg jj git
+abbr jgf jj git fetch
+
+abbr jj_msg --command jj --regex "-m" --set-cursor -- "--message \"%\""
+abbr jj_no_whitespace --command jj --regex "-w" -- "--ignore-all-space"
+
+abbr mn "jj git fetch && jj rebase -d main"
 
 
 # git
@@ -102,8 +116,8 @@ abbr gco git checkout
 
 abbr gsw "git branch | fzf --preview 'git log --color=always {-1}' --bind 'enter:become(git switch {-1})'"
 
-
-abbr mn "git switch main && git pull --autostash"
+# Replaced with jj equivalent above ^
+# abbr mn "git switch main && git pull --autostash"
 
 
 # ls
