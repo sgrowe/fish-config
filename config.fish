@@ -157,6 +157,10 @@ abbr yw yarn workspace
 abbr b brew
 
 
+# mise
+abbr m mise
+
+
 # Next.js
 set -gx NEXT_TELEMETRY_DISABLED 1
 # Turbo
@@ -180,12 +184,12 @@ abbr cu cursor
 abbr a aider
 abbr awd "aider (git status -s | awk '{print \$NF}')" # Start aider with edited files loaded
 abbr aw aider --watch-files
-abbr --command aider r -- --read
-abbr --command aider e -- --edit
-abbr --command aider m -- --message
-abbr --command aider mf -- --message-file
-abbr --command aider t -- --test
-abbr --command aider w -- --watch-files
+abbr aider_read --command aider --regex r -- --read
+abbr aider_edit --command aider --regex e -- --edit
+abbr aider_msg_ --command aider --regex m -- --message
+abbr aider_msgf --command aider --regex mf -- --message-file
+abbr aider_test --command aider --regex t -- --test
+abbr aider_wtch --command aider --regex w -- --watch-files
 
 
 set -x AIDER_NOTIFICATIONS true
