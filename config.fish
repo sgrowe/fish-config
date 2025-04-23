@@ -168,8 +168,7 @@ set -gx TURBO_TELEMETRY_DISABLED 1
 
 
 # Hurl
-abbr h hurl --variables-file .env
-abbr hm "hurl --variables-file .env --cert ../../.certs/*.pem --key ../../.certs/*.key"
+abbr h hurl
 
 
 # Zed
@@ -208,31 +207,7 @@ abbr so "xcrun simctl openurl booted (pbpaste)"
 abbr andr_paste adb shell input text
 
 
-# Paraspara
-abbr yt "yarn test -- --coverage false --maxWorkers=2 --workerThreads=false --ignoreProjects native-android native-ui-android --watch"
-abbr yty yarn type-check
-abbr dev yarn dev --filter=!./apps/orchestrator --filter=!./apps/paraspara-web
-abbr orc yarn workspace orchestrator dev
-abbr web yarn workspace paraspara-web dev
-abbr ios yarn dev:ios
-abbr ios_prebuild "cd apps/native && yarn prebuild:cached && cd ios && pod install"
-abbr andr yarn dev:android
-abbr e2eb "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox build -c ios.sim.release"
-abbr e2er "DETOX_APP_ENVIRONMENT=mocked OVERRIDE_WAITING_LIST=true yarn detox test --configuration ios.sim.release --take-screenshots failing --record-videos failing -l debug"
-abbr e2e_build "yarn workspace native detox build -c ios.sim.debug"
-abbr e2e_run "yarn workspace native detox test --configuration ios.sim.debug --take-screenshots failing --record-videos failing -l debug"
-abbr dt yarn devtools
-abbr sf hurl --variables-file sf.env
-abbr sw "yarn && yarn workspace graphql-types build"
-abbr gql "yarn workspace graphql-types build"
-abbr rmxc rm apps/native/ios/.xcode.env.local
-
-
 # Projects
-abbr para cd ~/planes/paraspara-platform
-abbr para2 cd ~/planes/paraspara-platform-2
-abbr para3 cd ~/planes/paraspara-platform-3
-abbr mdi cd ~/projects/MDI\\ Tracker
 
 
 # Xcode
