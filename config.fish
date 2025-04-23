@@ -121,9 +121,21 @@ abbr gsw "git branch | fzf --preview 'git log --color=always {-1}' --bind 'enter
 # abbr mn "git switch main && git pull --autostash"
 
 
-# ls
-abbr l ls -A
-abbr lh ls -lh
+# cd
+abbr cdr "cd (jj root)"
+
+
+# fd
+# https://github.com/sharkdp/fd
+abbr f    fd --no-require-git
+abbr ft  "fd --no-require-git | tree --fromfile"
+
+
+# ls + eza
+abbr l   eza
+abbr l1  eza --all -1
+abbr ll  eza --all --long
+abbr lh  eza --all --long --total-size
 
 
 # Rust
