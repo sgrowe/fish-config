@@ -33,23 +33,24 @@ abbr fconf "$EDIT ~/.config/fish"
 
 
 # JJ
-abbr j jj
-abbr js jj status
-abbr jn jj new
-abbr jd jj diff --ignore-space-change
-abbr jds jj describe
+abbr j                jj
+abbr js               jj status
+abbr jn               jj new
+abbr jd               jj diff --ignore-space-change
+abbr jds              jj describe
 abbr jm --set-cursor "jj describe -m \"%\""
 abbr jc --set-cursor "jj commit -m \"%\""
-abbr jl jj log
-abbr jls jj log --summary
-abbr je jj edit
-abbr jsq jj squash
-abbr jsh jj show
-abbr jg jj git
-abbr jgf jj git fetch
+abbr jl               jj log
+abbr jls              jj log --summary
+abbr je               jj edit
+abbr jsq              jj squash
+abbr jsh              jj show
+abbr jg               jj git
+abbr jgf              jj git fetch
 
-abbr jj_msg --command jj --regex "-m" --set-cursor -- "--message \"%\""
-abbr jj_no_whitespace --command jj --regex "-w" -- "--ignore-all-space"
+abbr jj_msg           --command jj --regex "-m" --set-cursor -- "--message \"%\""
+abbr jj_no_edit       --command jj --regex "-ne"             -- "--no-edit"
+abbr jj_no_whitespace --command jj --regex "-w"              -- "--ignore-all-space"
 
 abbr mn "jj git fetch && jj rebase -d main"
 
